@@ -6,6 +6,10 @@ contract SolidityTest {
    }
    
    function getResult() public pure  returns(uint) {
+    //this is a comment.
+    /**
+    this performs a basic addition arithmetics
+    **/
       uint a = 1;
       uint b = 2;
       uint result = a + b;
