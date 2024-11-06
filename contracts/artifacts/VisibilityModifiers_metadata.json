@@ -1,0 +1,99 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "externalFunction",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "publicFunction",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "publicVariable",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testVisibility",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "1.public= accessible by any contract 2.External= can only be called from the outside of the contract and cannot be called internally without using (this) 3.Internal= only accessible within the contract and by derived contracts(inherited contracts) 4.Private= Accessible only within the contract where it is declared.*",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/first.sol": "VisibilityModifiers"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/first.sol": {
+			"keccak256": "0xfca87913d3bc9f2ba2922a29869755efe280ac571139839eb0a70f7a10cfb1a4",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://b8d0b4231f92b8031cfbe68942adc5d2dd34a91820e38a3819a3dd09d9c5c37b",
+				"dweb:/ipfs/QmNZ41hUtefSR5p4XGjrndtjHgWhG1VA91GNSBuNDkRwDN"
+			]
+		}
+	},
+	"version": 1
+}
