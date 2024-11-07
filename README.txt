@@ -29,4 +29,5 @@ For unsupported modules, an error like this will be thrown: '<module_name> modul
 //This is a day to day progress in learning solidity
 day 1 : Basic syntax, adding cooments, data types
 day2 : variables and visibility modifiers
-day 2 : 
+day 3 : control structures and functions
+
