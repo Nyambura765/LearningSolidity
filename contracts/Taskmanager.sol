@@ -18,7 +18,7 @@ contract TaskMananger {
     }
 
     Task[] public tasks; //array
-    //mapping
+    //mapping the taskIds
     mapping(address => uint[]) public userTasks;
 
     //  Function to add a new task
