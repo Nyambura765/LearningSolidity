@@ -65,3 +65,4 @@ contract FunctionDemo {
         storedResult = sumUpTo(n); 
     }
 }
+
