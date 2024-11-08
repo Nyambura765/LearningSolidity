@@ -27,7 +27,9 @@ Please note, require/import is supported in a limited manner for Remix supported
 For now, modules supported by Remix are ethers, web3, swarmgw, chai, multihashes, remix and hardhat only for hardhat.ethers object/plugin.
 For unsupported modules, an error like this will be thrown: '<module_name> module require is not supported by Remix IDE' will be shown.
 //This is a day to day progress in learning solidity
-day 1 : Basic syntax, adding cooments, data types
-day2 : variables and visibility modifiers
-day 3 : control structures and functions(function modifiers,constructors)
+day 1:Introduction to blockchain basics,Ethereum and EVM,smart contracts,Role of cryptogrphy in blockchain.
+day 2 : Basic syntax, adding cooments, data types
+day3 : variables and visibility modifiers
+day 4 : control structures and functions(function modifiers,constructors)
+day 5: Arrays,structs,enums,mappings(demonstartion with a simple Task management contract)
 
