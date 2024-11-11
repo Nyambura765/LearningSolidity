@@ -1,7 +1,7 @@
 //SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.8.2 <0.9.0;
 
-
+//Simple task management contract
 contract TaskMananger {
     // enum
     enum Status {
@@ -21,7 +21,7 @@ contract TaskMananger {
     //mapping the taskIds
     mapping(address => uint[]) public userTasks;
 
-    //  Function to add a new task
+    //  Function to add a new task 
     function addTask(string memory _description) public {
         tasks.push(Task(_description, false, Status.ToDo));
         uint taskId = tasks.length - 1;

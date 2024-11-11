@@ -131,11 +131,11 @@
 	},
 	"sources": {
 		"contracts/Taskmanager.sol": {
-			"keccak256": "0x90ac4c0b1231f9aa5eb3ea1b77629a465486fcce58e2e5a0c56862d9fc87284f",
+			"keccak256": "0x6504c90ecfcc62fa601849350ddc35f0d8af95495120a31bda628776ff63ea22",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://303acabfb09dd845145da5bd9c0c9c6240354c1c5b590d5a773de9b792613303",
-				"dweb:/ipfs/Qmds2m6RFZEu5pu4MBeYMDkM6y3sakbbcrh99yqKmkGmZ3"
+				"bzz-raw://7bc1266987e106bdccde1f871d8becfe529dc600d955e074464d7ccfb1a85da4",
+				"dweb:/ipfs/QmYYfGTaRGEGfMJbFPRc73eAWjh99tkBtCsYig3impU3Uw"
 			]
 		}
 	},
