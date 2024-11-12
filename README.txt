@@ -32,4 +32,7 @@ day 2 : Basic syntax, adding cooments, data types
 day3 : variables and visibility modifiers
 day 4 : control structures and functions(function modifiers,constructors)
 day 5: Arrays,structs,enums,mappings(demonstartion with a simple Task management contract)
+day 6: Task manangement contract
+day 7: Controlled access smart contract
+day 8: Error handling using require,assert,revert.
 
