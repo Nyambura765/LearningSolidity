@@ -35,4 +35,6 @@ day 5: Arrays,structs,enums,mappings(demonstartion with a simple Task management
 day 6: Task manangement contract
 day 7: Controlled access smart contract
 day 8: Error handling using require,assert,revert.
+day 9:Events and logging
+day10: Access control and Role management contract to demonstrate Inheritance in solidity.
 
