@@ -13,6 +13,11 @@
 			{
 				"inputs": [
 					{
+						"internalType": "uint256",
+						"name": "_bookId",
+						"type": "uint256"
+					},
+					{
 						"internalType": "string",
 						"name": "_title",
 						"type": "string"
@@ -62,6 +67,11 @@
 				"name": "books",
 				"outputs": [
 					{
+						"internalType": "uint256",
+						"name": "bookId",
+						"type": "uint256"
+					},
+					{
 						"internalType": "string",
 						"name": "title",
 						"type": "string"
@@ -96,6 +106,11 @@
 				"outputs": [
 					{
 						"components": [
+							{
+								"internalType": "uint256",
+								"name": "bookId",
+								"type": "uint256"
+							},
 							{
 								"internalType": "string",
 								"name": "title",
@@ -140,6 +155,11 @@
 				],
 				"name": "getBookDetails",
 				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
 					{
 						"internalType": "string",
 						"name": "",
@@ -288,11 +308,11 @@
 	},
 	"sources": {
 		"contracts/Bookstore.sol": {
-			"keccak256": "0xa1d7dd6137087c0609e6137fcb4ceb851daf58715bb40834d056eeaa3895e521",
-			"license": "GPL-3.0",
+			"keccak256": "0x7a1c69c806b09cc642a80625b3cd5d5d5f3e3a60d0c32824963aa152a78645e3",
+			"license": "MIT",
 			"urls": [
-				"bzz-raw://c48dd6ca25469911a568504b99911f6dfa6bbf95050286a582b486c980c2b61a",
-				"dweb:/ipfs/QmNVkiPXTFjF4jAjgQYo2t5BUNqtdFgQLDvAVLGLUECjPf"
+				"bzz-raw://aeca082878f29d8d68a45a6c30c89833dbb6ee57d0f78a78331bcb9a10c498ee",
+				"dweb:/ipfs/QmP1F5qVhMHe9JU9cKniagUXV7z76BxhjJa9VTR2vQvze9"
 			]
 		}
 	},

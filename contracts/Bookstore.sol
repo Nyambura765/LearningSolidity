@@ -1,10 +1,10 @@
-//SPDX-License-Identifier: GPL-3.0
-pragma solidity >=0.8.2 <0.9.0;
-
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
 
 contract Bookstore {
-    
+    // Structure to hold book details, including bookId
     struct Book {
+        uint256 bookId; 
         string title;
         string author;
         uint256 price; 
@@ -19,7 +19,7 @@ contract Bookstore {
     // Counter to keep track of the total number of books sold
     uint256 public totalBooksSold = 0;
 
-    // Address of the owner 
+    // Address of the owner (the bookstore admin)
     address public owner;
 
     // Modifier to restrict functions to only the owner
@@ -33,13 +33,15 @@ contract Bookstore {
         owner = msg.sender;
     }
 
-    // Function to add a new book
-    function addBook(string memory _title, string memory _author, uint256 _price, uint256 _stock) public onlyOwner {
+    // Function to add a new book with a specific bookId
+    function addBook(uint256 _bookId, string memory _title, string memory _author, uint256 _price, uint256 _stock) public onlyOwner {
+        require(_bookId > 0, "Book ID should be greater than zero");
         require(_price > 0, "Price should be greater than zero");
         require(_stock > 0, "Stock should be greater than zero");
+        require(books[_bookId].bookId == 0, "Book ID already exists");
 
+        books[_bookId] = Book(_bookId, _title, _author, _price, _stock, true);
         bookCount++;
-        books[bookCount] = Book(_title, _author, _price, _stock, true);
     }
 
     // Function to update the stock of a book
@@ -60,24 +62,28 @@ contract Bookstore {
         require(msg.value == book.price, "Incorrect payment amount");
 
         book.stock--;
-        totalBooksSold++; // Increment the counter when a book is sold
+        totalBooksSold++; 
 
         // Transfer payment to the owner
         payable(owner).transfer(msg.value);
     }
 
     // Function to get the details of a book
-    function getBookDetails(uint256 _bookId) public view returns (string memory, string memory, uint256, uint256, bool) {
+    function getBookDetails(uint256 _bookId) public view returns (uint256, string memory, string memory, uint256, uint256, bool) {
         require(_bookId > 0 && _bookId <= bookCount, "Invalid book ID");
         Book memory book = books[_bookId];
-        return (book.title, book.author, book.price, book.stock, book.isAvailable);
+        return (book.bookId, book.title, book.author, book.price, book.stock, book.isAvailable);
     }
 
     // Function to get all books
     function getAllBooks() public view returns (Book[] memory) {
         Book[] memory allBooks = new Book[](bookCount);
+        uint256 index = 0;
         for (uint256 i = 1; i <= bookCount; i++) {
-            allBooks[i - 1] = books[i];
+            if (books[i].bookId != 0) {
+                allBooks[index] = books[i];
+                index++;
+            }
         }
         return allBooks;
     }
@@ -93,7 +99,9 @@ contract Bookstore {
     // Function to remove all books
     function removeAllBooks() public onlyOwner {
         for (uint256 i = 1; i <= bookCount; i++) {
-            books[i].isAvailable = false; 
+            if (books[i].isAvailable) {
+                books[i].isAvailable = false; 
+            }
         }
     }
 
