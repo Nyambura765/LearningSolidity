@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 contract Bookstore {
-    // Structure to hold book details, including bookId
+    
     struct Book {
         uint256 bookId; 
         string title;
@@ -18,18 +18,14 @@ contract Bookstore {
     
     // Counter to keep track of the total number of books sold
     uint256 public totalBooksSold = 0;
-
-    // Address of the owner (the bookstore admin)
     address public owner;
 
-    // Modifier to restrict functions to only the owner
-    modifier onlyOwner() {
+     modifier onlyOwner() {
         require(msg.sender == owner, "Only the owner can perform this action");
         _;
     }
 
-    // Constructor to set the contract deployer as the owner
-    constructor() {
+     constructor() {
         owner = msg.sender;
     }
 

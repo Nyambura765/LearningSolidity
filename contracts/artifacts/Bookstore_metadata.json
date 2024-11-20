@@ -308,11 +308,11 @@
 	},
 	"sources": {
 		"contracts/Bookstore.sol": {
-			"keccak256": "0x7a1c69c806b09cc642a80625b3cd5d5d5f3e3a60d0c32824963aa152a78645e3",
+			"keccak256": "0xadc8ea1991f1269cb79ffb324c9e86909c431b76c646a8ebc0a2589846a4249d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://aeca082878f29d8d68a45a6c30c89833dbb6ee57d0f78a78331bcb9a10c498ee",
-				"dweb:/ipfs/QmP1F5qVhMHe9JU9cKniagUXV7z76BxhjJa9VTR2vQvze9"
+				"bzz-raw://d13fcc08778a0a40653a8585717c3f40fe92a0cb7b856de016bb74633041f256",
+				"dweb:/ipfs/QmdSo2DL4tYXM984B9fB62b21BATVhHjHWX4tdFwXi5D3n"
 			]
 		}
 	},
