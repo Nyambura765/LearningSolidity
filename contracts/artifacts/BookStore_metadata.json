@@ -486,11 +486,11 @@
 			]
 		},
 		"contracts/Advancedbookstore.sol": {
-			"keccak256": "0x1a7f6440b03d6b24d28f3b11c00896d5f2efe32a315bb78cd4b6ff7df57c7c95",
+			"keccak256": "0xbfa2dd79ed50b88046bce2e2bb9379c72176d23597a4784ca6498808bfaca598",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://ea35de036dd15a6ee346de07e43817bd328f0c2ec358b706883e1e79fc4148b8",
-				"dweb:/ipfs/Qmf6X2YrudKW7YnW7QhqwHPnvUefbZK8sA1gothTdGxVm6"
+				"bzz-raw://e6b46483ea62ee3fe000b6d8f8468eadc3b9105699112e8a67ac711fbbb2b1a1",
+				"dweb:/ipfs/QmWJUyei12YC6q6QFaui6vbrgjf2KBTCEe7exiyHsSzG2N"
 			]
 		}
 	},

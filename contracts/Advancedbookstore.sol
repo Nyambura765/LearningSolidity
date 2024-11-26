@@ -64,7 +64,7 @@ contract BookStore is Ownable {
     event BookAdded(uint256 indexed bookId, string title, string author, uint256 price, uint256 stock);
     event PurchaseIntiated(uint256 indexed bookId, address indexed buyer, address indexed seller,  uint256 quantity);  // add a seller address for the event
     event PurchaseConfirmed(uint256 indexed bookId, address indexed buyer, address indexed seller, uint256 quantity); // add a seller address
-    event SubscriptionAdded(address indexed subscriber);          // complete on this two 
+    event SubscriptionAdded(address indexed subscriber);          
     event SubscriptionRemoved(address indexed subscriber);
     
      constructor(address initialOwner) Ownable(initialOwner) {
@@ -76,7 +76,7 @@ contract BookStore is Ownable {
         books[_bookId] = Book({
             title: _title,
             author: _author,
-            price: _price * 1 ether, // Proper conversion to make sure price is in wei
+            price: _price * 1 ether,
             stock: _stock,
             isAvailable: _stock > 0
         });
